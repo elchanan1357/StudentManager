@@ -1,5 +1,7 @@
 package com.example.studentmanager.Model
 
+import android.util.Log
+
 class Model private constructor() {
     companion object {
         val instance: Model = Model()
@@ -19,6 +21,7 @@ class Model private constructor() {
 
     fun addStudent(newStudent: Student) {
         this.students.add(newStudent)
+        Log.d("add","size of list: ${students.size}")
     }
 
     fun getStudent(i: Int): Student {

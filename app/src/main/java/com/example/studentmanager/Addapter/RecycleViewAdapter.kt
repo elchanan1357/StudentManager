@@ -8,6 +8,8 @@ import com.example.studentmanager.R
 
 class RecycleViewAdapter(private val studentList: MutableList<Student>?) :
     RecyclerView.Adapter<ViewHolder>() {
+    var listener: OnClickItemListener? = null
+
     override fun getItemCount(): Int = this.studentList?.size ?: 0
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -15,7 +17,7 @@ class RecycleViewAdapter(private val studentList: MutableList<Student>?) :
             LayoutInflater.from(parent.context)
                 .inflate(R.layout.row_of_list, parent, false)
 
-        return ViewHolder(studentView)
+        return ViewHolder(studentView, listener)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
