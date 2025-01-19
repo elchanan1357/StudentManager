@@ -39,7 +39,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
         <EditText
-            android:id="@+id/Edit_name"
+            android:id="@+id/Add_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -47,7 +47,7 @@
             android:inputType="text"
             android:text="Name"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/Edit_id"
+            app:layout_constraintBottom_toTopOf="@+id/Add_id"
             app:layout_constraintTop_toBottomOf="@+id/imageView"
             tools:layout_editor_absoluteX="154dp" />
 
@@ -63,16 +63,16 @@
             app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
         <EditText
-            android:id="@+id/Edit_id"
+            android:id="@+id/Add_id"
             android:layout_width="209dp"
             android:layout_height="26dp"
             android:layout_marginStart="50dp"
             android:ems="10"
             android:inputType="number"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/Edit_phone"
+            app:layout_constraintBottom_toTopOf="@+id/Add_phone"
             app:layout_constraintStart_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/Edit_name" />
+            app:layout_constraintTop_toBottomOf="@+id/Add_name" />
 
         <TextView
             android:id="@+id/textView3"
@@ -86,16 +86,16 @@
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <EditText
-            android:id="@+id/Edit_phone"
+            android:id="@+id/Add_phone"
             android:layout_width="210dp"
             android:layout_height="28dp"
             android:layout_marginStart="50dp"
             android:ems="10"
             android:inputType="phone"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/Edit_address"
+            app:layout_constraintBottom_toTopOf="@+id/Add_addres"
             app:layout_constraintStart_toEndOf="@+id/textView3"
-            app:layout_constraintTop_toBottomOf="@+id/Edit_id" />
+            app:layout_constraintTop_toBottomOf="@+id/Add_id" />
 
         <TextView
             android:id="@+id/textView4"
@@ -104,24 +104,24 @@
             android:layout_marginStart="32dp"
             android:text="addrees"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/checkBox"
+            app:layout_constraintBottom_toTopOf="@+id/Add_checkBox"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <EditText
-            android:id="@+id/Edit_address"
+            android:id="@+id/Add_addres"
             android:layout_width="214dp"
             android:layout_height="41dp"
             android:ems="10"
             android:inputType="text"
             android:text="@string/name"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/checkBox"
-            app:layout_constraintTop_toBottomOf="@+id/Edit_phone"
+            app:layout_constraintBottom_toTopOf="@+id/Add_checkBox"
+            app:layout_constraintTop_toBottomOf="@+id/Add_phone"
             tools:layout_editor_absoluteX="154dp" />
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/Add_checkBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
