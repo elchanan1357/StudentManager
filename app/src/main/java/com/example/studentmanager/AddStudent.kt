@@ -22,11 +22,11 @@ class AddStudent : AppCompatActivity() {
     }
 
     private fun save() {
-        val name: EditText = findViewById(R.id.Add_name)
+        val name: EditText = findViewById(R.id.Add_Name)
         val id: EditText = findViewById(R.id.Add_id)
         val phone: EditText = findViewById(R.id.Add_phone)
-        val address: EditText = findViewById(R.id.Add_addres)
-        val checkBox: CheckBox = findViewById(R.id.Detalis_checkbox)
+        val address: EditText = findViewById(R.id.Add_address)
+        val checkBox: CheckBox = findViewById(R.id.Add_checkbox)
 
         if (name.text.isEmpty() || id.text.isEmpty() || phone.text.isEmpty() || address.text.isEmpty()) {
             Log.d("save", "Please fill all fields")

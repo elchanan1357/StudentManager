@@ -9,9 +9,9 @@ class Model private constructor() {
 
     val students: MutableList<Student> = ArrayList()
 
-    init {
-        students.add(Student("Ali", 1235, 552487790, "Bnei Brak", false))
-    }
+//    init {
+//        students.add(Student("Ali", 1235, 552487790, "Bnei Brak", false))
+//    }
 
     //TODO  ask yehuda what is companion object
     //TODO  1. fun add for new student

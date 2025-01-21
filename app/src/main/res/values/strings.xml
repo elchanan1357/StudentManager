@@ -1,12 +1,15 @@
 <resources>
     <string name="app_name">StudentManager</string>
-    <string name="name">Name</string>
+    <string name="name">Name:</string>
     <string name="save">SAVE</string>
     <string name="delete">DELETE</string>
     <string name="cancel">CANCEL</string>
     <string name="button">Button</string>
-    <string name="addrees">addrees</string>
-    <string name="id">id:</string>
-    <string name="phone">phone:</string>
     <string name="new_student">New Student</string>
+    <string name="phone">Phone:</string>
+    <string name="checked">Checked</string>
+    <string name="id">Id:</string>
+    <string name="address">Address:</string>
+    <string name="student_list">Student List</string>
+    <string name="plus">+</string>
 </resources>

@@ -43,8 +43,8 @@ class MainActivity : AppCompatActivity() {
 
         val intent = Intent(this, DetailsActivity::class.java)
         adapter?.listener =  object : OnClickItemListener {
-            override fun onItemClick(student: Student?) {
-                intent.putExtra("student",student)
+            override fun onItemClick(position: Int) {
+                intent.putExtra("Position",position)
                 startActivity(intent)
             }
         }
