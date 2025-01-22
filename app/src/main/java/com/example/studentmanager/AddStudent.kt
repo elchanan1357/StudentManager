@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.example.studentmanager.Model.Model
 import com.example.studentmanager.Model.Student
 
@@ -15,6 +16,7 @@ class AddStudent : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_student)
+        window.statusBarColor = ContextCompat.getColor(this, R.color.silver)
 
         findViewById<Button>(R.id.Add_SaveBtn).setOnClickListener { save() }
         findViewById<Button>(R.id.Add_CancelBtn).setOnClickListener { finish() }
@@ -28,8 +30,10 @@ class AddStudent : AppCompatActivity() {
         val address: EditText = findViewById(R.id.Add_address)
         val checkBox: CheckBox = findViewById(R.id.Add_checkbox)
 
-        if (name.text.isEmpty() || id.text.isEmpty() || phone.text.isEmpty() || address.text.isEmpty()) {
-            Log.d("save", "Please fill all fields")
+        if (name.text.isEmpty() || id.text.isEmpty() || phone.text.isEmpty()) {
+            name.error = "This field is required"
+            id.error = "This field is required"
+            phone.error = "This field is required"
             return
         }
 
