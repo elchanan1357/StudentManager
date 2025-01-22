@@ -9,7 +9,6 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.studentmanager.Model.Model
-import com.example.studentmanager.Model.Student
 
 class DetailsActivity : AppCompatActivity() {
     var i: Int = -1

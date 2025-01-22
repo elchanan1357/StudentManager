@@ -1,9 +1,8 @@
 package com.example.studentmanager
 
-import android.app.Activity
+
 import android.content.Intent
 import android.os.Bundle
-import android.text.Editable
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
